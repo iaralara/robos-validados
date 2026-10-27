@@ -1,0 +1,81 @@
+# ==============================================================================
+# GitIgnore Blindado - RPA & Automações Corporativas
+# ==============================================================================
+
+# Credenciais, Segredos e Chaves
+.env
+*.env
+*.env.*
+!.env.example
+*.json
+!package.json
+!tsconfig*.json
+!*sample*.json
+!*example*.json
+chave_planilha.json
+chave_google.json
+credenciais*.json
+service_account*.json
+
+# Planilhas e Dados de Produção
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.tsv
+*.ods
+!*sample*.csv
+!*sample*.xlsx
+
+# Documentos, Boletos e Comprovantes
+*.pdf
+*.PDF
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Logs e Arquivos de Depuração
+*.log
+logs/
+debug/
+debug*.txt
+dump*.txt
+
+# Binários, Executáveis e Compilação
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.spec
+*.bat
+*.cmd
+build/
+dist/
+**/build/
+**/dist/
+*.pyinstaller
+
+# Python Cache e Ambientes Virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
